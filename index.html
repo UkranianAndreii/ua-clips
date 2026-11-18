@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UA Clips Uploader</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#1b1b1f;background:#fff}
+h1{font-size:28px}a{color:#0057b7}@media(prefers-color-scheme:dark){body{background:#111018;color:#eee}a{color:#ffd500}}</style></head>
+<body>
+<h1>UA Clips Uploader</h1>
+<p>UA Clips Uploader is a private, single-user tool that publishes short highlight clips to one YouTube channel,
+<a href="https://www.youtube.com/@ua_twitch_clips">UA Твіч Кліпи (@ua_twitch_clips)</a>, a fan channel about Ukrainian Twitch streams.</p>
+<h2>What it does</h2>
+<ol>
+<li>Detects notable moments in public Ukrainian Twitch streams and prepares a vertical clip with Ukrainian subtitles.</li>
+<li>Sends the clip to the channel owner for review in a private Telegram chat.</li>
+<li>Only when the owner approves a clip, uploads it to the owner's own channel with the YouTube Data API (<code>videos.insert</code>).</li>
+</ol>
+<h2>Who uses it</h2>
+<p>Only the channel owner. It is not offered to other users, has no sign-up and no public interface.
+It signs in with OAuth 2.0 using only the <code>https://www.googleapis.com/auth/youtube.upload</code> scope.</p>
+<p>Every video credits the streamer with a link to their Twitch channel.</p>
+<p><a href="privacy.html">Privacy policy</a> · Contact: <a href="https://github.com/UkranianAndreii/ua-clips/issues">open an issue on GitHub</a></p>
+</body></html>
